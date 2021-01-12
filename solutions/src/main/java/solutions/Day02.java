@@ -26,8 +26,8 @@ public class Day02 {
 		return total;
 	}
 
-    public static int solution_2(List<String> arr) {
-        int total = 0;
+	public static int solution_2(List<String> arr) {
+		int total = 0;
 		for (String present : arr) {
 			int[] dimensions = Arrays.stream(present.split("x")).mapToInt(s -> {
 				try {
@@ -38,11 +38,11 @@ public class Day02 {
 				}
 			}).toArray();
 			int volume = dimensions[0] * dimensions[1] * dimensions[2];
-            int smallest_perimeter = 2 * Collections.min(Arrays.asList(dimensions[0] + dimensions[1],
-                    dimensions[1] + dimensions[2], dimensions[0] + dimensions[2]));
+			int smallest_perimeter = 2 * Collections.min(Arrays.asList(dimensions[0] + dimensions[1],
+					dimensions[1] + dimensions[2], dimensions[0] + dimensions[2]));
 			total += volume + smallest_perimeter;
 		}
 		return total;
-    }
+	}
 
 }

@@ -37,7 +37,7 @@ public class Day02Test {
 
 	@Test
 	public void test_solution_2() {
-		
+
 		String data = readInput();
 		List<String> arr = Arrays.asList(data.split("\n"));
 		int s2 = Day02.solution_2(arr);
