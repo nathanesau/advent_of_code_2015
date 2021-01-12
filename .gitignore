@@ -1,0 +1,12 @@
+# editor files
+.vscode
+
+# gradle
+.gradle
+.settings
+.classpath
+.project
+build
+
+# java files
+*.class
