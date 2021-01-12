@@ -7,6 +7,7 @@
 .classpath
 .project
 build
+bin
 
 # java files
 *.class
